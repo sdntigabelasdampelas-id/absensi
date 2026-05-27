@@ -122,7 +122,7 @@
                <div class="hidden md:flex w-1/2 wavy-bg flex-col justify-center items-center relative">
                    <div class="absolute w-80 h-96 bg-white/10 backdrop-blur-sm rounded-3xl border border-white/20 z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center text-center p-6 shadow-xl">
                        <i class="fa-solid fa-school-flag text-5xl text-white mb-6 drop-shadow-md"></i>
-                       <h1 class="text-3xl font-black text-white drop-shadow-lg tracking-wider leading-tight">SDN 09<br>DAMPELAS</h1>
+                       <h1 class="text-3xl font-black text-white drop-shadow-lg tracking-wider leading-tight">SDN 13<br>DAMPELAS</h1>
                        <div class="w-12 h-1 bg-yellow-400 rounded-full my-4"></div>
                        <p class="text-[10px] text-white/90 font-bold tracking-widest">DINAS PENDIDIKAN PEMUDA DAN OLAHRAGA</p>
                    </div>
@@ -950,7 +950,7 @@
        async function onScanSuccess(decodedText) {
            if(isScanningLocked) return; isScanningLocked = true;
            const cleanNIS = decodedText.trim().replace(/\r?\n|\r/g, "");
-           try { new Audio('https://www.soundjay.com/buttons/sounds/button-09.mp3').play().catch(e=>{}); } catch(e) {}
+           try { new Audio('https://www.soundjay.com/buttons/sounds/button-13.mp3').play().catch(e=>{}); } catch(e) {}
           
            const res = await fetchAPI('recordAbsen', { nis: cleanNIS, waktu: new Date().toLocaleString('id-ID') });
            const overlay = document.getElementById('scan-result-overlay');
